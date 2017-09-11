@@ -63,6 +63,9 @@ export let config = {
             cert: ""
         }
     },
+    dashboard: {
+        url: getFromEnv("INFRABOX_DASHBOARD_URL")
+    },
     github: {
         enabled: getFromEnvBool("INFRABOX_GITHUB_ENABLED", false),
         client_id: "someid",

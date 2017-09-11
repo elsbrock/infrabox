@@ -87,6 +87,9 @@ spec:
                     name: INFRABOX_API_TLS_ENABLED
                     value: {{ default "false" .Values.api.tls.enabled | quote }}
                 -
+                    name: INFRABOX_DASHBOARD_URL
+                    value: {{ .Values.dashboard.url }}
+                -
                     name: INFRABOX_DOCKER_REGISTRY_URL
                     value: {{ .Values.docker_registry.url }}
                 {{ if .Values.general.no_check_certificates }}
